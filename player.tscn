@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddfabjfya7b8g"]
+
+[ext_resource type="Script" uid="uid://4t8qcvxely1e" path="res://Scenes/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://b4aqhmbam3vkq" path="res://kenney_top-down-shooter/Spritesheet/spritesheet_characters.png" id="1_v0iea"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
+atlas = ExtResource("1_v0iea")
+region = Rect2(462, 42, 42, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6t5aa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvnsp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vgqql"]
+radius = 14.0
+height = 58.0
+
+[node name="player" type="Area2D"]
+position = Vector2(642, 299)
+script = ExtResource("1_cvnsp")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(14, -5.99998)
+scale = Vector2(1.09524, 1.2381)
+sprite_frames = SubResource("SpriteFrames_6t5aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -2)
+shape = SubResource("CapsuleShape2D_vgqql")
