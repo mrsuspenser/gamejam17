@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dalj5kqjo2jrw"]
+
+[ext_resource type="Script" uid="uid://ctfew5pq8wyq1" path="res://Scripts/prompt.gd" id="1_22o6r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh83k"]
+size = Vector2(236, 10)
+
+[node name="Prompt" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_22o6r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sh83k")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,1350 @@
+[gd_scene load_steps=9 format=4 uid="uid://dp5s4p8ygt2va"]
+
+[ext_resource type="PackedScene" uid="uid://ddfabjfya7b8g" path="res://Scenes/player.tscn" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://cxja38e05syuf" path="res://Assets/RF_Catacombs_v1.0/mainlevbuild.png" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://cfykk3ombu0et" path="res://Scenes/vertical_walls.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://ckgmyswtnkg3u" path="res://Scenes/Horizontal_walls.tscn" id="4_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://dalj5kqjo2jrw" path="res://Scenes/prompt.tscn" id="5_kry3j"]
+[ext_resource type="FontFile" uid="uid://kt8mfkhbh2o7" path="res://Assets/Pixelify_Sans/static/PixelifySans-Medium.ttf" id="6_21xkr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gbba"]
+texture = ExtResource("2_bo1nx")
+40:0/0 = 0
+41:0/0 = 0
+42:0/0 = 0
+43:0/0 = 0
+44:0/0 = 0
+55:0/0 = 0
+56:0/0 = 0
+57:0/0 = 0
+58:0/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+8:1/0 = 0
+11:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+29:1/0 = 0
+40:1/0 = 0
+41:1/0 = 0
+42:1/0 = 0
+43:1/0 = 0
+44:1/0 = 0
+55:1/0 = 0
+56:1/0 = 0
+57:1/0 = 0
+58:1/0 = 0
+4:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+15:2/0 = 0
+19:2/0 = 0
+23:2/0 = 0
+25:2/0 = 0
+29:2/0 = 0
+31:2/0 = 0
+32:2/0 = 0
+33:2/0 = 0
+34:2/0 = 0
+35:2/0 = 0
+36:2/0 = 0
+37:2/0 = 0
+38:2/0 = 0
+40:2/0 = 0
+41:2/0 = 0
+42:2/0 = 0
+43:2/0 = 0
+44:2/0 = 0
+55:2/0 = 0
+56:2/0 = 0
+57:2/0 = 0
+58:2/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+17:3/0 = 0
+19:3/0 = 0
+23:3/0 = 0
+25:3/0 = 0
+29:3/0 = 0
+31:3/0 = 0
+32:3/0 = 0
+33:3/0 = 0
+34:3/0 = 0
+35:3/0 = 0
+36:3/0 = 0
+37:3/0 = 0
+38:3/0 = 0
+40:3/0 = 0
+41:3/0 = 0
+42:3/0 = 0
+43:3/0 = 0
+44:3/0 = 0
+45:3/0 = 0
+46:3/0 = 0
+47:3/0 = 0
+50:3/0 = 0
+51:3/0 = 0
+52:3/0 = 0
+55:3/0 = 0
+56:3/0 = 0
+57:3/0 = 0
+58:3/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+19:4/0 = 0
+23:4/0 = 0
+25:4/0 = 0
+29:4/0 = 0
+31:4/0 = 0
+32:4/0 = 0
+33:4/0 = 0
+34:4/0 = 0
+35:4/0 = 0
+36:4/0 = 0
+37:4/0 = 0
+38:4/0 = 0
+40:4/0 = 0
+41:4/0 = 0
+42:4/0 = 0
+43:4/0 = 0
+44:4/0 = 0
+45:4/0 = 0
+46:4/0 = 0
+47:4/0 = 0
+48:4/0 = 0
+49:4/0 = 0
+50:4/0 = 0
+51:4/0 = 0
+52:4/0 = 0
+55:4/0 = 0
+56:4/0 = 0
+57:4/0 = 0
+58:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+23:5/0 = 0
+25:5/0 = 0
+29:5/0 = 0
+31:5/0 = 0
+32:5/0 = 0
+33:5/0 = 0
+34:5/0 = 0
+35:5/0 = 0
+36:5/0 = 0
+37:5/0 = 0
+38:5/0 = 0
+40:5/0 = 0
+41:5/0 = 0
+42:5/0 = 0
+43:5/0 = 0
+44:5/0 = 0
+45:5/0 = 0
+46:5/0 = 0
+47:5/0 = 0
+48:5/0 = 0
+49:5/0 = 0
+50:5/0 = 0
+51:5/0 = 0
+52:5/0 = 0
+55:5/0 = 0
+56:5/0 = 0
+57:5/0 = 0
+58:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+25:6/0 = 0
+29:6/0 = 0
+31:6/0 = 0
+32:6/0 = 0
+33:6/0 = 0
+34:6/0 = 0
+35:6/0 = 0
+36:6/0 = 0
+37:6/0 = 0
+38:6/0 = 0
+45:6/0 = 0
+46:6/0 = 0
+47:6/0 = 0
+50:6/0 = 0
+51:6/0 = 0
+52:6/0 = 0
+55:6/0 = 0
+56:6/0 = 0
+57:6/0 = 0
+58:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+23:7/0 = 0
+25:7/0 = 0
+27:7/0 = 0
+29:7/0 = 0
+40:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+23:8/0 = 0
+25:8/0 = 0
+27:8/0 = 0
+29:8/0 = 0
+31:8/0 = 0
+32:8/0 = 0
+33:8/0 = 0
+34:8/0 = 0
+37:8/0 = 0
+38:8/0 = 0
+40:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+16:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+23:9/0 = 0
+25:9/0 = 0
+27:9/0 = 0
+29:9/0 = 0
+37:9/0 = 0
+38:9/0 = 0
+40:9/0 = 0
+42:9/0 = 0
+44:9/0 = 0
+45:9/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+16:10/0 = 0
+17:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+23:10/0 = 0
+25:10/0 = 0
+27:10/0 = 0
+29:10/0 = 0
+37:10/0 = 0
+38:10/0 = 0
+40:10/0 = 0
+42:10/0 = 0
+44:10/0 = 0
+45:10/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+14:11/0 = 0
+15:11/0 = 0
+16:11/0 = 0
+17:11/0 = 0
+18:11/0 = 0
+19:11/0 = 0
+23:11/0 = 0
+25:11/0 = 0
+27:11/0 = 0
+29:11/0 = 0
+37:11/0 = 0
+38:11/0 = 0
+40:11/0 = 0
+42:11/0 = 0
+44:11/0 = 0
+45:11/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+12:12/0 = 0
+13:12/0 = 0
+14:12/0 = 0
+15:12/0 = 0
+16:12/0 = 0
+30:12/0 = 0
+31:12/0 = 0
+32:12/0 = 0
+33:12/0 = 0
+34:12/0 = 0
+35:12/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+12:13/0 = 0
+13:13/0 = 0
+14:13/0 = 0
+15:13/0 = 0
+16:13/0 = 0
+17:13/0 = 0
+18:13/0 = 0
+19:13/0 = 0
+20:13/0 = 0
+21:13/0 = 0
+23:13/0 = 0
+24:13/0 = 0
+25:13/0 = 0
+26:13/0 = 0
+30:13/0 = 0
+31:13/0 = 0
+32:13/0 = 0
+33:13/0 = 0
+34:13/0 = 0
+35:13/0 = 0
+40:13/0 = 0
+41:13/0 = 0
+46:13/0 = 0
+47:13/0 = 0
+49:13/0 = 0
+50:13/0 = 0
+52:13/0 = 0
+53:13/0 = 0
+55:13/0 = 0
+56:13/0 = 0
+58:13/0 = 0
+59:13/0 = 0
+61:13/0 = 0
+62:13/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+12:14/0 = 0
+13:14/0 = 0
+14:14/0 = 0
+15:14/0 = 0
+16:14/0 = 0
+17:14/0 = 0
+18:14/0 = 0
+19:14/0 = 0
+20:14/0 = 0
+21:14/0 = 0
+23:14/0 = 0
+24:14/0 = 0
+25:14/0 = 0
+26:14/0 = 0
+30:14/0 = 0
+31:14/0 = 0
+32:14/0 = 0
+33:14/0 = 0
+34:14/0 = 0
+35:14/0 = 0
+40:14/0 = 0
+41:14/0 = 0
+46:14/0 = 0
+47:14/0 = 0
+49:14/0 = 0
+50:14/0 = 0
+52:14/0 = 0
+53:14/0 = 0
+55:14/0 = 0
+56:14/0 = 0
+58:14/0 = 0
+59:14/0 = 0
+61:14/0 = 0
+62:14/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+9:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+13:15/0 = 0
+14:15/0 = 0
+15:15/0 = 0
+16:15/0 = 0
+17:15/0 = 0
+18:15/0 = 0
+19:15/0 = 0
+20:15/0 = 0
+21:15/0 = 0
+23:15/0 = 0
+24:15/0 = 0
+25:15/0 = 0
+26:15/0 = 0
+30:15/0 = 0
+31:15/0 = 0
+32:15/0 = 0
+33:15/0 = 0
+34:15/0 = 0
+35:15/0 = 0
+40:15/0 = 0
+41:15/0 = 0
+46:15/0 = 0
+47:15/0 = 0
+49:15/0 = 0
+50:15/0 = 0
+52:15/0 = 0
+53:15/0 = 0
+55:15/0 = 0
+56:15/0 = 0
+58:15/0 = 0
+59:15/0 = 0
+61:15/0 = 0
+62:15/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+9:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+12:16/0 = 0
+13:16/0 = 0
+14:16/0 = 0
+15:16/0 = 0
+16:16/0 = 0
+30:16/0 = 0
+31:16/0 = 0
+32:16/0 = 0
+33:16/0 = 0
+34:16/0 = 0
+35:16/0 = 0
+38:16/0 = 0
+39:16/0 = 0
+40:16/0 = 0
+41:16/0 = 0
+42:16/0 = 0
+43:16/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+11:17/0 = 0
+12:17/0 = 0
+13:17/0 = 0
+14:17/0 = 0
+17:17/0 = 0
+18:17/0 = 0
+19:17/0 = 0
+20:17/0 = 0
+21:17/0 = 0
+22:17/0 = 0
+23:17/0 = 0
+24:17/0 = 0
+25:17/0 = 0
+26:17/0 = 0
+30:17/0 = 0
+31:17/0 = 0
+32:17/0 = 0
+33:17/0 = 0
+34:17/0 = 0
+35:17/0 = 0
+38:17/0 = 0
+39:17/0 = 0
+40:17/0 = 0
+41:17/0 = 0
+42:17/0 = 0
+43:17/0 = 0
+46:17/0 = 0
+47:17/0 = 0
+49:17/0 = 0
+50:17/0 = 0
+52:17/0 = 0
+53:17/0 = 0
+55:17/0 = 0
+56:17/0 = 0
+58:17/0 = 0
+59:17/0 = 0
+61:17/0 = 0
+62:17/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+11:18/0 = 0
+12:18/0 = 0
+13:18/0 = 0
+14:18/0 = 0
+17:18/0 = 0
+18:18/0 = 0
+19:18/0 = 0
+20:18/0 = 0
+21:18/0 = 0
+22:18/0 = 0
+23:18/0 = 0
+24:18/0 = 0
+25:18/0 = 0
+26:18/0 = 0
+31:18/0 = 0
+32:18/0 = 0
+34:18/0 = 0
+37:18/0 = 0
+38:18/0 = 0
+39:18/0 = 0
+40:18/0 = 0
+41:18/0 = 0
+42:18/0 = 0
+43:18/0 = 0
+44:18/0 = 0
+46:18/0 = 0
+47:18/0 = 0
+49:18/0 = 0
+50:18/0 = 0
+52:18/0 = 0
+53:18/0 = 0
+55:18/0 = 0
+56:18/0 = 0
+58:18/0 = 0
+59:18/0 = 0
+61:18/0 = 0
+62:18/0 = 0
+5:19/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+8:19/0 = 0
+11:19/0 = 0
+12:19/0 = 0
+13:19/0 = 0
+14:19/0 = 0
+17:19/0 = 0
+18:19/0 = 0
+19:19/0 = 0
+20:19/0 = 0
+21:19/0 = 0
+22:19/0 = 0
+23:19/0 = 0
+24:19/0 = 0
+25:19/0 = 0
+26:19/0 = 0
+31:19/0 = 0
+32:19/0 = 0
+34:19/0 = 0
+37:19/0 = 0
+38:19/0 = 0
+39:19/0 = 0
+40:19/0 = 0
+41:19/0 = 0
+42:19/0 = 0
+43:19/0 = 0
+44:19/0 = 0
+26:20/0 = 0
+38:20/0 = 0
+39:20/0 = 0
+40:20/0 = 0
+41:20/0 = 0
+42:20/0 = 0
+43:20/0 = 0
+46:20/0 = 0
+47:20/0 = 0
+49:20/0 = 0
+50:20/0 = 0
+52:20/0 = 0
+53:20/0 = 0
+55:20/0 = 0
+56:20/0 = 0
+58:20/0 = 0
+59:20/0 = 0
+61:20/0 = 0
+62:20/0 = 0
+1:21/0 = 0
+2:21/0 = 0
+3:21/0 = 0
+4:21/0 = 0
+5:21/0 = 0
+6:21/0 = 0
+7:21/0 = 0
+8:21/0 = 0
+9:21/0 = 0
+10:21/0 = 0
+11:21/0 = 0
+12:21/0 = 0
+13:21/0 = 0
+14:21/0 = 0
+15:21/0 = 0
+16:21/0 = 0
+17:21/0 = 0
+18:21/0 = 0
+19:21/0 = 0
+20:21/0 = 0
+21:21/0 = 0
+22:21/0 = 0
+24:21/0 = 0
+25:21/0 = 0
+26:21/0 = 0
+27:21/0 = 0
+31:21/0 = 0
+32:21/0 = 0
+34:21/0 = 0
+38:21/0 = 0
+39:21/0 = 0
+40:21/0 = 0
+41:21/0 = 0
+42:21/0 = 0
+43:21/0 = 0
+46:21/0 = 0
+47:21/0 = 0
+49:21/0 = 0
+50:21/0 = 0
+52:21/0 = 0
+53:21/0 = 0
+55:21/0 = 0
+56:21/0 = 0
+58:21/0 = 0
+59:21/0 = 0
+61:21/0 = 0
+62:21/0 = 0
+1:22/0 = 0
+2:22/0 = 0
+3:22/0 = 0
+4:22/0 = 0
+5:22/0 = 0
+6:22/0 = 0
+7:22/0 = 0
+8:22/0 = 0
+9:22/0 = 0
+10:22/0 = 0
+11:22/0 = 0
+12:22/0 = 0
+13:22/0 = 0
+14:22/0 = 0
+15:22/0 = 0
+16:22/0 = 0
+17:22/0 = 0
+18:22/0 = 0
+19:22/0 = 0
+20:22/0 = 0
+21:22/0 = 0
+22:22/0 = 0
+24:22/0 = 0
+25:22/0 = 0
+26:22/0 = 0
+27:22/0 = 0
+31:22/0 = 0
+32:22/0 = 0
+34:22/0 = 0
+40:22/0 = 0
+41:22/0 = 0
+1:23/0 = 0
+2:23/0 = 0
+3:23/0 = 0
+4:23/0 = 0
+5:23/0 = 0
+6:23/0 = 0
+7:23/0 = 0
+8:23/0 = 0
+9:23/0 = 0
+10:23/0 = 0
+11:23/0 = 0
+12:23/0 = 0
+13:23/0 = 0
+14:23/0 = 0
+15:23/0 = 0
+16:23/0 = 0
+17:23/0 = 0
+18:23/0 = 0
+19:23/0 = 0
+20:23/0 = 0
+21:23/0 = 0
+22:23/0 = 0
+24:23/0 = 0
+25:23/0 = 0
+26:23/0 = 0
+27:23/0 = 0
+46:23/0 = 0
+47:23/0 = 0
+49:23/0 = 0
+50:23/0 = 0
+52:23/0 = 0
+53:23/0 = 0
+55:23/0 = 0
+56:23/0 = 0
+58:23/0 = 0
+59:23/0 = 0
+61:23/0 = 0
+62:23/0 = 0
+1:24/0 = 0
+2:24/0 = 0
+3:24/0 = 0
+4:24/0 = 0
+5:24/0 = 0
+6:24/0 = 0
+7:24/0 = 0
+8:24/0 = 0
+9:24/0 = 0
+10:24/0 = 0
+11:24/0 = 0
+12:24/0 = 0
+13:24/0 = 0
+14:24/0 = 0
+15:24/0 = 0
+16:24/0 = 0
+17:24/0 = 0
+18:24/0 = 0
+40:24/0 = 0
+41:24/0 = 0
+46:24/0 = 0
+47:24/0 = 0
+49:24/0 = 0
+50:24/0 = 0
+52:24/0 = 0
+53:24/0 = 0
+55:24/0 = 0
+56:24/0 = 0
+58:24/0 = 0
+59:24/0 = 0
+61:24/0 = 0
+62:24/0 = 0
+1:25/0 = 0
+2:25/0 = 0
+3:25/0 = 0
+4:25/0 = 0
+5:25/0 = 0
+6:25/0 = 0
+7:25/0 = 0
+8:25/0 = 0
+9:25/0 = 0
+10:25/0 = 0
+11:25/0 = 0
+12:25/0 = 0
+13:25/0 = 0
+14:25/0 = 0
+15:25/0 = 0
+16:25/0 = 0
+17:25/0 = 0
+18:25/0 = 0
+19:25/0 = 0
+20:25/0 = 0
+21:25/0 = 0
+22:25/0 = 0
+24:25/0 = 0
+25:25/0 = 0
+26:25/0 = 0
+27:25/0 = 0
+39:25/0 = 0
+40:25/0 = 0
+41:25/0 = 0
+42:25/0 = 0
+3:26/0 = 0
+4:26/0 = 0
+5:26/0 = 0
+6:26/0 = 0
+7:26/0 = 0
+8:26/0 = 0
+9:26/0 = 0
+10:26/0 = 0
+11:26/0 = 0
+12:26/0 = 0
+13:26/0 = 0
+14:26/0 = 0
+15:26/0 = 0
+16:26/0 = 0
+19:26/0 = 0
+20:26/0 = 0
+21:26/0 = 0
+22:26/0 = 0
+24:26/0 = 0
+25:26/0 = 0
+26:26/0 = 0
+27:26/0 = 0
+39:26/0 = 0
+40:26/0 = 0
+41:26/0 = 0
+42:26/0 = 0
+46:26/0 = 0
+47:26/0 = 0
+48:26/0 = 0
+49:26/0 = 0
+52:26/0 = 0
+53:26/0 = 0
+54:26/0 = 0
+55:26/0 = 0
+58:26/0 = 0
+59:26/0 = 0
+60:26/0 = 0
+61:26/0 = 0
+3:27/0 = 0
+4:27/0 = 0
+5:27/0 = 0
+6:27/0 = 0
+7:27/0 = 0
+8:27/0 = 0
+9:27/0 = 0
+10:27/0 = 0
+11:27/0 = 0
+12:27/0 = 0
+13:27/0 = 0
+14:27/0 = 0
+15:27/0 = 0
+16:27/0 = 0
+19:27/0 = 0
+20:27/0 = 0
+21:27/0 = 0
+22:27/0 = 0
+24:27/0 = 0
+25:27/0 = 0
+26:27/0 = 0
+27:27/0 = 0
+40:27/0 = 0
+41:27/0 = 0
+46:27/0 = 0
+47:27/0 = 0
+48:27/0 = 0
+49:27/0 = 0
+52:27/0 = 0
+53:27/0 = 0
+54:27/0 = 0
+55:27/0 = 0
+58:27/0 = 0
+59:27/0 = 0
+60:27/0 = 0
+61:27/0 = 0
+3:28/0 = 0
+4:28/0 = 0
+5:28/0 = 0
+6:28/0 = 0
+7:28/0 = 0
+8:28/0 = 0
+9:28/0 = 0
+10:28/0 = 0
+11:28/0 = 0
+12:28/0 = 0
+13:28/0 = 0
+14:28/0 = 0
+15:28/0 = 0
+16:28/0 = 0
+46:28/0 = 0
+47:28/0 = 0
+48:28/0 = 0
+49:28/0 = 0
+52:28/0 = 0
+53:28/0 = 0
+54:28/0 = 0
+55:28/0 = 0
+58:28/0 = 0
+59:28/0 = 0
+60:28/0 = 0
+61:28/0 = 0
+3:29/0 = 0
+4:29/0 = 0
+5:29/0 = 0
+6:29/0 = 0
+7:29/0 = 0
+8:29/0 = 0
+9:29/0 = 0
+10:29/0 = 0
+11:29/0 = 0
+12:29/0 = 0
+13:29/0 = 0
+14:29/0 = 0
+15:29/0 = 0
+16:29/0 = 0
+46:29/0 = 0
+47:29/0 = 0
+48:29/0 = 0
+49:29/0 = 0
+52:29/0 = 0
+53:29/0 = 0
+54:29/0 = 0
+55:29/0 = 0
+58:29/0 = 0
+59:29/0 = 0
+60:29/0 = 0
+61:29/0 = 0
+3:30/0 = 0
+4:30/0 = 0
+5:30/0 = 0
+6:30/0 = 0
+7:30/0 = 0
+8:30/0 = 0
+9:30/0 = 0
+10:30/0 = 0
+11:30/0 = 0
+12:30/0 = 0
+13:30/0 = 0
+14:30/0 = 0
+15:30/0 = 0
+16:30/0 = 0
+5:31/0 = 0
+6:31/0 = 0
+7:31/0 = 0
+8:31/0 = 0
+11:31/0 = 0
+12:31/0 = 0
+13:31/0 = 0
+14:31/0 = 0
+5:32/0 = 0
+6:32/0 = 0
+7:32/0 = 0
+8:32/0 = 0
+11:32/0 = 0
+12:32/0 = 0
+13:32/0 = 0
+14:32/0 = 0
+5:33/0 = 0
+6:33/0 = 0
+7:33/0 = 0
+8:33/0 = 0
+11:33/0 = 0
+12:33/0 = 0
+13:33/0 = 0
+14:33/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jjvhh"]
+sources/0 = SubResource("TileSetAtlasSource_8gbba")
+
+[node name="Main" type="Node"]
+
+[node name="player" parent="." instance=ExtResource("1_bo1nx")]
+z_index = 25
+position = Vector2(687, 687)
+slide_on_ceiling = false
+platform_floor_layers = 4294967041
+platform_wall_layers = 1
+speed = 125
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+zoom = Vector2(4, 4)
+
+[node name="Ground" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAApACoAAAA6AA0AAAApACsAAAA6AA4AAAApACwAAAA6AA8AAAAqACoAAAA7AA0AAAAqACwAAAA7AA8AAAArACoAAAA6AA0AAAArACsAAAA6AA4AAAArACwAAAA6AA8AAAAsACoAAAA7AA0AAAAsACsAAAA7AA4AAAAsACwAAAA7AA8AAAApACcAAAA6AA0AAAApACgAAAA6AA4AAAApACkAAAA6AA8AAAAqACcAAAA7AA0AAAAqACgAAAA7AA4AAAAqACkAAAA7AA8AAAArACcAAAA6AA0AAAArACgAAAA6AA4AAAArACkAAAA6AA8AAAAsACcAAAA7AA0AAAAsACgAAAA7AA4AAAAsACkAAAA7AA8AAAApACQAAAA6AA0AAAApACUAAAA6AA4AAAApACYAAAA6AA8AAAAqACQAAAA7AA0AAAAqACUAAAA7AA4AAAAqACYAAAA7AA8AAAArACQAAAA6AA0AAAArACUAAAA6AA4AAAArACYAAAA6AA8AAAAsACQAAAA7AA0AAAAsACUAAAA7AA4AAAAsACYAAAA7AA8AAAApACEAAAA6AA0AAAApACIAAAA6AA4AAAApACMAAAA6AA8AAAAqACEAAAA7AA0AAAAqACIAAAA7AA4AAAAqACMAAAA7AA8AAAArACEAAAA6AA0AAAArACIAAAA6AA4AAAArACMAAAA6AA8AAAAsACEAAAA7AA0AAAAsACIAAAA7AA4AAAAsACMAAAA7AA8AAAApAB4AAAA6AA0AAAApAB8AAAA6AA4AAAApACAAAAA6AA8AAAAqAB4AAAA7AA0AAAAqAB8AAAA7AA4AAAAqACAAAAA7AA8AAAArAB4AAAA6AA0AAAArAB8AAAA6AA4AAAArACAAAAA6AA8AAAAsAB4AAAA7AA0AAAAsAB8AAAA7AA4AAAAsACAAAAA7AA8AAAApABsAAAA6AA0AAAApABwAAAA6AA4AAAApAB0AAAA6AA8AAAAqABsAAAA7AA0AAAAqABwAAAA7AA4AAAAqAB0AAAA7AA8AAAArABsAAAA6AA0AAAArABwAAAA6AA4AAAArAB0AAAA6AA8AAAAsABsAAAA7AA0AAAAsABwAAAA7AA4AAAAsAB0AAAA7AA8AAAApABgAAAA6AA0AAAApABkAAAA6AA4AAAApABoAAAA6AA8AAAAqABgAAAA7AA0AAAAqABkAAAA7AA4AAAAqABoAAAA7AA8AAAArABgAAAA6AA0AAAArABkAAAA6AA4AAAArABoAAAA6AA8AAAAsABgAAAA7AA0AAAAsABkAAAA7AA4AAAAsABoAAAA7AA8AAAApABUAAAA6AA0AAAApABYAAAA6AA4AAAApABcAAAA6AA8AAAAqABUAAAA7AA0AAAAqABYAAAA7AA4AAAAqABcAAAA7AA8AAAArABUAAAA6AA0AAAArABYAAAA6AA4AAAArABcAAAA6AA8AAAAsABUAAAA7AA0AAAAsABYAAAA7AA4AAAAsABcAAAA7AA8AAAApABIAAAA6AA0AAAApABMAAAA6AA4AAAApABQAAAA6AA8AAAAqABIAAAA7AA0AAAAqABMAAAA7AA4AAAAqABQAAAA7AA8AAAArABIAAAA6AA0AAAArABMAAAA6AA4AAAArABQAAAA6AA8AAAAsABIAAAA7AA0AAAAsABMAAAA7AA4AAAAsABQAAAA7AA8AAAApAA8AAAA6AA0AAAApABAAAAA6AA4AAAApABEAAAA6AA8AAAAqAA8AAAA7AA0AAAAqABAAAAA7AA4AAAAqABEAAAA7AA8AAAArAA8AAAA6AA0AAAArABAAAAA6AA4AAAArABEAAAA6AA8AAAAsAA8AAAA7AA0AAAAsABAAAAA7AA4AAAAsABEAAAA7AA8AAAAkAAwAAAA6AA0AAAAkAA0AAAA6AA4AAAAkAA4AAAA6AA8AAAAlAAwAAAA7AA0AAAAlAA0AAAA7AA4AAAAlAA4AAAA7AA8AAAAmAAwAAAA6AA0AAAAmAA0AAAA6AA4AAAAmAA4AAAA6AA8AAAAnAAwAAAA7AA0AAAAnAA0AAAA7AA4AAAAnAA4AAAA7AA8AAAAoAAwAAAA6AA0AAAAoAA0AAAA6AA4AAAAoAA4AAAA6AA8AAAApAAwAAAA7AA0AAAApAA0AAAA7AA4AAAApAA4AAAA7AA8AAAAqAAwAAAA6AA0AAAAqAA0AAAA6AA4AAAAqAA4AAAA6AA8AAAArAAwAAAA7AA0AAAArAA0AAAA7AA4AAAArAA4AAAA7AA8AAAAsAAwAAAA6AA0AAAAsAA0AAAA6AA4AAAAsAA4AAAA6AA8AAAAtAAwAAAA7AA0AAAAtAA0AAAA7AA4AAAAtAA4AAAA7AA8AAAAuAAwAAAA6AA0AAAAuAA0AAAA6AA4AAAAuAA4AAAA6AA8AAAAvAAwAAAA7AA0AAAAvAA0AAAA7AA4AAAAvAA4AAAA7AA8AAAAwAAwAAAA6AA0AAAAwAA0AAAA6AA4AAAAwAA4AAAA6AA8AAAAxAAwAAAA7AA0AAAAxAA0AAAA7AA4AAAAxAA4AAAA7AA8AAAAkAAkAAAA6AA0AAAAkAAoAAAA6AA4AAAAkAAsAAAA6AA8AAAAlAAkAAAA7AA0AAAAlAAoAAAA7AA4AAAAlAAsAAAA7AA8AAAAmAAkAAAA6AA0AAAAmAAoAAAA6AA4AAAAmAAsAAAA6AA8AAAAnAAkAAAA7AA0AAAAnAAoAAAA7AA4AAAAnAAsAAAA7AA8AAAAoAAkAAAA6AA0AAAAoAAoAAAA6AA4AAAAoAAsAAAA6AA8AAAApAAkAAAA7AA0AAAApAAoAAAA7AA4AAAApAAsAAAA7AA8AAAAqAAkAAAA6AA0AAAAqAAoAAAA6AA4AAAAqAAsAAAA6AA8AAAArAAkAAAA7AA0AAAArAAoAAAA7AA4AAAArAAsAAAA7AA8AAAAsAAkAAAA6AA0AAAAsAAoAAAA6AA4AAAAsAAsAAAA6AA8AAAAtAAkAAAA7AA0AAAAtAAoAAAA7AA4AAAAtAAsAAAA7AA8AAAAuAAkAAAA6AA0AAAAuAAoAAAA6AA4AAAAuAAsAAAA6AA8AAAAvAAkAAAA7AA0AAAAvAAoAAAA7AA4AAAAvAAsAAAA7AA8AAAAwAAkAAAA6AA0AAAAwAAoAAAA6AA4AAAAwAAsAAAA6AA8AAAAxAAkAAAA7AA0AAAAxAAoAAAA7AA4AAAAxAAsAAAA7AA8AAAAkAAYAAAA6AA0AAAAkAAcAAAA6AA4AAAAkAAgAAAA6AA8AAAAlAAYAAAA7AA0AAAAlAAcAAAA7AA4AAAAlAAgAAAA7AA8AAAAmAAYAAAA6AA0AAAAmAAcAAAA6AA4AAAAmAAgAAAA6AA8AAAAnAAYAAAA7AA0AAAAnAAcAAAA7AA4AAAAnAAgAAAA7AA8AAAAoAAYAAAA6AA0AAAAoAAcAAAA6AA4AAAAoAAgAAAA6AA8AAAApAAYAAAA7AA0AAAApAAcAAAA7AA4AAAApAAgAAAA7AA8AAAAqAAYAAAA6AA0AAAAqAAcAAAA6AA4AAAAqAAgAAAA6AA8AAAArAAYAAAA7AA0AAAArAAcAAAA7AA4AAAArAAgAAAA7AA8AAAAsAAYAAAA6AA0AAAAsAAcAAAA6AA4AAAAsAAgAAAA6AA8AAAAtAAYAAAA7AA0AAAAtAAcAAAA7AA4AAAAtAAgAAAA7AA8AAAAuAAYAAAA6AA0AAAAuAAcAAAA6AA4AAAAuAAgAAAA6AA8AAAAvAAYAAAA7AA0AAAAvAAcAAAA7AA4AAAAvAAgAAAA7AA8AAAAwAAYAAAA6AA0AAAAwAAcAAAA6AA4AAAAwAAgAAAA6AA8AAAAxAAYAAAA7AA0AAAAxAAcAAAA7AA4AAAAxAAgAAAA7AA8AAAAkAAMAAAA6AA0AAAAkAAQAAAA6AA4AAAAkAAUAAAA6AA8AAAAlAAMAAAA7AA0AAAAlAAQAAAA7AA4AAAAlAAUAAAA7AA8AAAAmAAMAAAA6AA0AAAAmAAQAAAA6AA4AAAAmAAUAAAA6AA8AAAAnAAMAAAA7AA0AAAAnAAQAAAA7AA4AAAAnAAUAAAA7AA8AAAAoAAMAAAA6AA0AAAAoAAQAAAA6AA4AAAAoAAUAAAA6AA8AAAApAAMAAAA7AA0AAAApAAQAAAA7AA4AAAApAAUAAAA7AA8AAAAqAAMAAAA6AA0AAAAqAAQAAAA6AA4AAAAqAAUAAAA6AA8AAAArAAMAAAA7AA0AAAArAAQAAAA7AA4AAAArAAUAAAA7AA8AAAAsAAMAAAA6AA0AAAAsAAQAAAA6AA4AAAAsAAUAAAA6AA8AAAAtAAMAAAA7AA0AAAAtAAQAAAA7AA4AAAAtAAUAAAA7AA8AAAAuAAMAAAA6AA0AAAAuAAQAAAA6AA4AAAAuAAUAAAA6AA8AAAAvAAMAAAA7AA0AAAAvAAQAAAA7AA4AAAAvAAUAAAA7AA8AAAAwAAMAAAA6AA0AAAAwAAQAAAA6AA4AAAAwAAUAAAA6AA8AAAAxAAMAAAA7AA0AAAAxAAQAAAA7AA4AAAAxAAUAAAA7AA8AAAAkAAAAAAA6AA0AAAAkAAEAAAA6AA4AAAAkAAIAAAA6AA8AAAAlAAAAAAA7AA0AAAAlAAEAAAA7AA4AAAAlAAIAAAA7AA8AAAAmAAAAAAA6AA0AAAAmAAEAAAA6AA4AAAAmAAIAAAA6AA8AAAAnAAAAAAA7AA0AAAAnAAEAAAA7AA4AAAAnAAIAAAA7AA8AAAAoAAAAAAA6AA0AAAAoAAEAAAA6AA4AAAAoAAIAAAA6AA8AAAApAAAAAAA7AA0AAAApAAEAAAA7AA4AAAApAAIAAAA7AA8AAAAqAAAAAAA6AA0AAAAqAAEAAAA6AA4AAAAqAAIAAAA6AA8AAAArAAAAAAA7AA0AAAArAAEAAAA7AA4AAAArAAIAAAA7AA8AAAAsAAAAAAA6AA0AAAAsAAEAAAA6AA4AAAAsAAIAAAA6AA8AAAAtAAAAAAA7AA0AAAAtAAEAAAA7AA4AAAAtAAIAAAA7AA8AAAAuAAAAAAA6AA0AAAAuAAEAAAA6AA4AAAAuAAIAAAA6AA8AAAAvAAAAAAA7AA0AAAAvAAEAAAA7AA4AAAAvAAIAAAA7AA8AAAAwAAAAAAA6AA0AAAAwAAEAAAA6AA4AAAAwAAIAAAA6AA8AAAAxAAAAAAA7AA0AAAAxAAEAAAA7AA4AAAAxAAIAAAA7AA8AAAAqACsAAAA7AA4AAAA=")
+tile_set = SubResource("TileSet_jjvhh")
+
+[node name="vertwalls" type="Node" parent="."]
+
+[node name="Vertical Walls" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 17
+position = Vector2(647, 698)
+
+[node name="Vertical Walls2" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 16
+position = Vector2(647, 669)
+
+[node name="Vertical Walls3" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 15
+position = Vector2(647, 641)
+
+[node name="Vertical Walls4" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 14
+position = Vector2(647, 612)
+
+[node name="Vertical Walls5" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 13
+position = Vector2(647, 584)
+
+[node name="Vertical Walls6" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 12
+position = Vector2(647, 555)
+
+[node name="Vertical Walls7" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 11
+position = Vector2(647, 526)
+
+[node name="Vertical Walls8" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 10
+position = Vector2(647, 498)
+
+[node name="Vertical Walls9" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 9
+position = Vector2(647, 470)
+
+[node name="Vertical Walls10" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 8
+position = Vector2(647, 442)
+
+[node name="Vertical Walls11" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 7
+position = Vector2(647, 413)
+
+[node name="Vertical Walls12" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 6
+position = Vector2(647, 385)
+
+[node name="Vertical Walls13" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 5
+position = Vector2(647, 356)
+
+[node name="Vertical Walls14" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 4
+position = Vector2(647, 328)
+
+[node name="Vertical Walls15" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 3
+position = Vector2(647, 299)
+
+[node name="Vertical Walls16" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 2
+position = Vector2(647, 270)
+
+[node name="Vertical Walls17" parent="vertwalls" instance=ExtResource("3_8gbba")]
+z_index = 1
+position = Vector2(647, 260)
+
+[node name="vertwalls2" type="Node" parent="."]
+
+[node name="Vertical Walls" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 17
+position = Vector2(729, 698)
+
+[node name="Vertical Walls2" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 16
+position = Vector2(729, 669)
+
+[node name="Vertical Walls3" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 15
+position = Vector2(729, 641)
+
+[node name="Vertical Walls4" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 14
+position = Vector2(729, 612)
+
+[node name="Vertical Walls5" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 13
+position = Vector2(729, 584)
+
+[node name="Vertical Walls6" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 12
+position = Vector2(729, 555)
+
+[node name="Vertical Walls7" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 11
+position = Vector2(729, 526)
+
+[node name="Vertical Walls8" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 10
+position = Vector2(729, 498)
+
+[node name="Vertical Walls9" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 9
+position = Vector2(729, 470)
+
+[node name="Vertical Walls10" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 8
+position = Vector2(729, 442)
+
+[node name="Vertical Walls11" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 7
+position = Vector2(729, 413)
+
+[node name="Vertical Walls12" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 6
+position = Vector2(729, 385)
+
+[node name="Vertical Walls13" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 5
+position = Vector2(729, 356)
+
+[node name="Vertical Walls14" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 4
+position = Vector2(729, 328)
+
+[node name="Vertical Walls15" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 3
+position = Vector2(729, 299)
+
+[node name="Vertical Walls16" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 2
+position = Vector2(729, 270)
+
+[node name="Vertical Walls17" parent="vertwalls2" instance=ExtResource("3_8gbba")]
+z_index = 1
+position = Vector2(729, 260)
+
+[node name="vertwalls3" type="Node" parent="."]
+
+[node name="Vertical Walls" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 17
+position = Vector2(792, 223)
+
+[node name="Vertical Walls2" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 16
+position = Vector2(792, 194)
+
+[node name="Vertical Walls3" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 15
+position = Vector2(792, 166)
+
+[node name="Vertical Walls4" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 14
+position = Vector2(792, 137)
+
+[node name="Vertical Walls5" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 13
+position = Vector2(792, 109)
+
+[node name="Vertical Walls6" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 12
+position = Vector2(792, 80)
+
+[node name="Vertical Walls7" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 11
+position = Vector2(792, 51)
+
+[node name="Vertical Walls8" parent="vertwalls3" instance=ExtResource("3_8gbba")]
+z_index = 10
+position = Vector2(792, 23)
+
+[node name="vertwalls4" type="Node" parent="."]
+
+[node name="Vertical Walls" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 17
+position = Vector2(576, 212)
+
+[node name="Vertical Walls2" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 16
+position = Vector2(576, 183)
+
+[node name="Vertical Walls3" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 15
+position = Vector2(576, 155)
+
+[node name="Vertical Walls4" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 14
+position = Vector2(576, 126)
+
+[node name="Vertical Walls5" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 13
+position = Vector2(576, 98)
+
+[node name="Vertical Walls6" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 12
+position = Vector2(576, 69)
+
+[node name="Vertical Walls7" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 11
+position = Vector2(576, 40)
+
+[node name="Vertical Walls8" parent="vertwalls4" instance=ExtResource("3_8gbba")]
+z_index = 10
+position = Vector2(576, 12)
+
+[node name="horizontalwalls1" type="Node" parent="."]
+
+[node name="AnimatableBody2D" parent="horizontalwalls1" instance=ExtResource("4_jjvhh")]
+z_index = 18
+position = Vector2(656, 711)
+
+[node name="AnimatableBody2D2" parent="horizontalwalls1" instance=ExtResource("4_jjvhh")]
+z_index = 18
+position = Vector2(691, 711)
+
+[node name="AnimatableBody2D3" parent="horizontalwalls1" instance=ExtResource("4_jjvhh")]
+z_index = 18
+position = Vector2(720, 711)
+
+[node name="horizontalwalls4" type="Node" parent="."]
+
+[node name="AnimatableBody2D" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+z_index = 18
+position = Vector2(711, 4)
+
+[node name="AnimatableBody2D2" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+z_index = 18
+position = Vector2(747, 4)
+
+[node name="AnimatableBody2D3" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+z_index = 9
+position = Vector2(783, 4)
+
+[node name="AnimatableBody2D4" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+position = Vector2(675, 4)
+
+[node name="AnimatableBody2D5" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+position = Vector2(639, 4)
+
+[node name="AnimatableBody2D6" parent="horizontalwalls4" instance=ExtResource("4_jjvhh")]
+position = Vector2(603, 4)
+
+[node name="horizontalwalls2" type="Node" parent="."]
+
+[node name="AnimatableBody2D" parent="horizontalwalls2" instance=ExtResource("4_jjvhh")]
+position = Vector2(593, 231)
+
+[node name="AnimatableBody2D2" parent="horizontalwalls2" instance=ExtResource("4_jjvhh")]
+position = Vector2(609, 231)
+
+[node name="AnimatableBody2D3" parent="horizontalwalls2" instance=ExtResource("4_jjvhh")]
+position = Vector2(638, 231)
+
+[node name="horizontalwalls3" type="Node" parent="."]
+
+[node name="AnimatableBody2D" parent="horizontalwalls3" instance=ExtResource("4_jjvhh")]
+position = Vector2(738, 231)
+
+[node name="AnimatableBody2D2" parent="horizontalwalls3" instance=ExtResource("4_jjvhh")]
+position = Vector2(774, 231)
+
+[node name="AnimatableBody2D3" parent="horizontalwalls3" instance=ExtResource("4_jjvhh")]
+position = Vector2(782, 231)
+
+[node name="Prompt" parent="." instance=ExtResource("5_kry3j")]
+unique_name_in_owner = true
+position = Vector2(689, 665)
+
+[node name="Label" type="Label" parent="."]
+z_index = 25
+anchors_preset = -1
+anchor_right = 0.06
+anchor_bottom = 0.066
+offset_left = 593.0
+offset_top = 718.0
+offset_right = 702.2
+offset_bottom = 704.48
+theme_override_fonts/font = ExtResource("6_21xkr")
+theme_override_font_sizes/font_size = 28
+text = "WASD to move"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 589.0
+offset_top = 744.0
+offset_right = 792.0
+offset_bottom = 767.0
+theme_override_fonts/font = ExtResource("6_21xkr")
+theme_override_font_sizes/font_size = 16
+text = "Space to Interact"
+horizontal_alignment = 1

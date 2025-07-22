@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckgmyswtnkg3u"]
+
+[ext_resource type="Texture2D" uid="uid://2rn7uw4oaol1" path="res://Assets/RF_Catacombs_v1.0/decorative.png" id="1_h1u1j"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h1u1j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n7h71"]
+size = Vector2(36, 23)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_h1u1j")
+metadata/_edit_group_ = true
+
+[node name="Decorative" type="Sprite2D" parent="."]
+texture = ExtResource("1_h1u1j")
+region_enabled = true
+region_rect = Rect2(5.30152, 100.593, 36.3876, 27.2969)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_n7h71")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsh83mfs058hj"]
+
+[ext_resource type="Texture2D" uid="uid://2rn7uw4oaol1" path="res://Assets/RF_Catacombs_v1.0/decorative.png" id="1_at03l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pagh"]
+size = Vector2(18, 43)
+
+[node name="Vertical Walls" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_at03l")
+region_enabled = true
+region_rect = Rect2(86.5549, 67.3496, 18.8916, 45.0059)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_7pagh")
